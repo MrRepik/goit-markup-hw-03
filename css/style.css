@@ -29,6 +29,30 @@ body{
 }
 
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+margin: 0;
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1128px;
+    padding: 0 15px;
+    margin: 0 auto;
+   
+}
+
+
 /**-----------------HEADER--------------**/
 
 
@@ -39,16 +63,51 @@ font-size: 18px;
 line-height: 1.17;
 text-transform: uppercase;
 letter-spacing: 0.03em;
-font-style: normal;
 color: var(--link-color);
+margin-right: 76px;
 }
 
+
+
+.header-container{
+    display: flex;
+
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+
+.header-list{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.header-link{
+    padding: 24px 0;
+    display: block;
+}
+
+.header-link:focus ,.header-link:hover{
+    color: var(--hover-color);
+}
+    
+.address-flex{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+
+.header-address-link:focus ,.header-address-link:hover{
+    color: var(--hover-color);
+}
+  
 .header-address{
-    font-style: normal; 
+    margin-left: auto;
 }
-
-
-
 .header-studio{
 color: var(--header-studio);
 }
@@ -57,6 +116,8 @@ color: var(--header-studio);
     background: var(--header-color);
 }
 
+
+
 .header-link{
 font-family: 'Roboto';
 font-weight: 500;
@@ -64,7 +125,6 @@ font-size: 16px;
 line-height: 1.15;
 line-height: 1.5;
 letter-spacing: 0.02em;
-font-style: normal;
 letter-spacing: 0.02em;
 color: var(--header-color);
 }
@@ -73,16 +133,15 @@ color: var(--header-color);
 font-family: 'Roboto';
 font-size: 16px;
 line-height: 1.50;
-font-style: normal;
 letter-spacing: 0.02em;
 color: var(--address-color);
+padding: 24px 0;
+display: block;
 }
 
 
 
-.header-item :hover, .header-item :focus{
-color: var(--hover-color);
-}
+
 
 
 /**-----------------MAIN--------------**/
@@ -186,7 +245,6 @@ letter-spacing: 0.03em;
 .portfolio-btn{
 background-color: #F4F4FD;
 font-family: 'Roboto', sans-serif;
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
