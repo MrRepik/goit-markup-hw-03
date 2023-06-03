@@ -82,6 +82,8 @@ text-transform: uppercase;
 letter-spacing: 0.03em;
 color: var(--link-color);
 margin-right: 76px;
+display: inline-block;
+margin-bottom: 16px;
 }
 
 
@@ -176,6 +178,11 @@ display: block;
     padding-bottom: 120px;
 }
 
+
+.main-list-item{
+    width: calc((100% - 72px)/ 4);
+
+}
 .main-h{
 font-family: 'Roboto';
 font-size: 56px;
@@ -202,6 +209,10 @@ margin: 0 auto;
 display: block;
 margin-top: 48px;
 padding: 16px 32px;
+min-width: 169px;
+height: 56px;
+border: none; 
+border-radius: 4px;
 }
 
 .main-btn:hover, .main-btn:focus{
@@ -241,8 +252,10 @@ text-align: center;
 text-transform: capitalize;
 letter-spacing: 0.02em;
 color: var(--header-color);
-padding-bottom: 72px;
+margin-bottom: 72px;
 }
+
+
 
 .main-displey{
 display: flex;
@@ -287,6 +300,7 @@ margin-top: 8px;
 
 .team-htree{
 margin-top: 32px;
+margin-bottom: 8px
 }
 
 
@@ -294,8 +308,14 @@ margin-top: 32px;
     background-color: var(--background-our-team);
     text-align: center;
     padding-bottom: 32px;
+    width: calc((100% - 72px) / 4); 
+    border-radius: 0px 0px 4px 4px;
 
 }
+.foto-list-item{
+   width: calc((100% - 48px) / 3); 
+}
+
 
 
 /**-----------------FOOTER--------------**/
@@ -303,8 +323,7 @@ margin-top: 32px;
 
 .background-footer{
 background: #2E2F42;
-padding-top: 101.5px;
-padding-bottom: 100px;
+padding: 100px 0 
 }
 
 .header-studio-two{
@@ -334,8 +353,13 @@ border-radius: 4px;
 .portfolio-btn:hover, .portfolio-btn:focus{
     background: #404BBF;
     color: #FFFFFF;
+    border: 1px solid transparent
 }
 
+.portfolio-section{
+    padding-top: 96px; 
+    padding-bottom: 120px;
+}
 
 .list-style{
     list-style: none;
@@ -352,8 +376,8 @@ display: flex;
 gap: 24px;
 margin: 0 auto;
 justify-content: center;
-padding-bottom: 72px;
 padding-top: 96px;
+margin-bottom: 72px
  }
  
 
@@ -375,18 +399,20 @@ padding-bottom: 120px;
 
  }
 .portfolio-htree{
-
+    margin-bottom: 8px
  }
 
 .portfolio-div{
     border: 1px solid #E7E9FC;
-    border-top: 0;
-    padding: 32px 0;
-    padding-left: 16px;
-
+    border-top: none;
+    padding: 32px 16px;
  }
 
 
 .portfolio-p{
+    
+ }
 
+ img{
+    display: block;
  }
