@@ -53,9 +53,26 @@ ol{
 }
 
 
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
 /**-----------------HEADER--------------**/
 
-
+.header{
+    border-bottom: 1px solid #E7E9FC;
+}
 .header-logo{
 font-family: 'Raleway', sans-serif;
 font-weight: 800;
@@ -310,6 +327,8 @@ color: #4D5AE5;
 cursor: pointer;
 letter-spacing: 0.04em;
 border: 1px solid #E7E9FC;
+padding: 12px 24px;
+border-radius: 4px;
 }
 
 .portfolio-btn:hover, .portfolio-btn:focus{
@@ -325,4 +344,49 @@ border: 1px solid #E7E9FC;
      
 .link-style{
  text-decoration: none;
+ }
+
+
+.portfolio-button{
+display: flex;
+gap: 24px;
+margin: 0 auto;
+justify-content: center;
+padding-bottom: 72px;
+padding-top: 96px;
+ }
+ 
+
+.portfolio-foto{
+display: flex;
+flex-wrap: wrap;
+gap: 48px 24px;
+padding-bottom: 120px;
+ }
+
+
+
+.portfolio-style{
+
+ }
+
+
+.portfolio-link{
+
+ }
+.portfolio-htree{
+
+ }
+
+.portfolio-div{
+    border: 1px solid #E7E9FC;
+    border-top: 0;
+    padding: 32px 0;
+    padding-left: 16px;
+
+ }
+
+
+.portfolio-p{
+
  }
